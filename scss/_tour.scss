@@ -1,0 +1,75 @@
+.tours{
+     width: 100%;
+    
+  
+   
+}
+   
+.row{
+   
+    height: 60vh;
+}
+.content-col {
+    width: 60%;
+    padding-left: 40px;
+    
+    h1 {
+        font-size: 2rem;
+        position: relative;
+        // bottom: 40px;
+        color: $c;
+        word-spacing: 10px;
+    }
+
+    p {
+        color: grey;
+        font-size: 15px;
+
+    }
+
+    .btn {
+        border: 1px solid $c;
+        border-radius: 5px;
+        background-color: dodgerblue;
+        padding: 10px 20px;
+        color: white;
+        cursor: pointer;
+        margin-top: 25px;
+
+
+    }
+}
+
+
+.content-col .btn:hover {
+    background-color: transparent;
+    color: dimgray;
+}
+
+.img-col {
+    width: 40%;
+    // justify-content: right;
+    padding-right: 30px;
+    // height: 60vh;
+    // align-items: center;
+
+
+    .img-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+         justify-content: end;
+         
+
+        img {
+            max-width: 270px;
+            height: 35vh;
+            margin: 15px;
+        }
+    }
+
+}
+
+
+
+
