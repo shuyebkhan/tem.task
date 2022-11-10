@@ -4,3 +4,215 @@
     text-align: center;
     
 }
+
+
+
+//navbar resonsive.
+
+@media (max-width: 968px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+        position: fixed;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+
+
+
+@media (max-width: 875px) {
+    .checkbtn {
+        display: block;
+    }
+
+
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #27282c;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        position: fixed;
+        top: 80px;
+        z-index: 3;
+  
+
+        li {
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+     
+            a {
+                font-size: 20px;    
+            }
+        }
+
+    }
+
+    a.hover {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+
+
+  
+};
+
+
+
+// event responsive.
+
+@media(max-width:1200px)and (min-width:600px){
+    .col img {
+        height: 40vh;
+    }
+
+    .event .row {
+        // margin-top: 45px;
+        margin-top: -70px;
+    }
+
+    .event {
+        height: 90vh;
+    }
+};
+
+
+
+@media (min-width:320px) and (max-width:599px){
+   
+        .event {
+            // height: 100vh;
+            width: 80%;
+            margin: 150px auto;
+         
+        }
+    
+    
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .col img {
+    
+        height: 20vh;
+    }
+
+    .row .col {
+        margin-top: 20px;
+       
+    }
+
+}
+
+
+
+// EXPLORE RESPONSIVE
+
+@media (min-width:400px) and (max-width:600px){
+    .explore-content {
+        width: 100%;
+        padding: 50px;
+        margin-top: 10%;
+    }
+    .explore-content h1{
+                color:rgba(95, 158, 160, 0.791);
+    }
+
+    .explore-content p {
+        font-size: 20px;
+        padding-top: 0px;
+        
+    }
+}
+
+@media (max-width:399px){
+    .explore .explore-content {
+        margin-top: 0%;
+    }
+
+
+    .explore-content h1{
+        color:grey;
+}
+.explore-content p {
+    font-size: 16px;
+    padding-top: 0px;
+    
+}
+
+}
+
+
+
+
+//RESPONIVE TOUR
+
+
+@media (min-width:400px) and (max-width:700px){
+    .row1{
+        display: flex;
+        flex-direction: column;
+    } 
+ 
+
+    .content-col {
+        width: 100%;
+    }
+
+
+    .img-col .img-gallery {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .img-col .img-gallery img {
+        max-width: 160px;
+    }
+}
+
+
+
+@media(max-width:399px){
+    .row1{
+        display: flex;
+        flex-direction: column;
+    } 
+ 
+
+    .content-col {
+        width: 100%;
+    }
+
+
+    .img-col .img-gallery {
+        display: flex;
+        flex-wrap: nowrap;
+        // width: 100%;
+        width: 126%;
+        justify-content: center;
+    }
+
+
+    .img-col .img-gallery img {
+        max-width: 160px;
+    }
+}
+
+

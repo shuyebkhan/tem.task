@@ -5,25 +5,30 @@
    
 }
    
-.row{
+.row1{
    
-    height: 60vh;
+    // height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
 }
 .content-col {
     width: 60%;
     padding-left: 40px;
     
     h1 {
-        font-size: 2rem;
+        font-size: 1.9rem;
         position: relative;
         // bottom: 40px;
         color: $c;
-        word-spacing: 10px;
+        word-spacing: 6px;
     }
 
     p {
         color: grey;
-        font-size: 15px;
+        font-size: 14px;
 
     }
 
@@ -62,7 +67,8 @@
          
 
         img {
-            max-width: 270px;
+            // max-width: 270px;
+            max-width: 200px;
             height: 35vh;
             margin: 15px;
         }

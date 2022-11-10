@@ -74,69 +74,69 @@ label.logo {
 
 // RESPONSIVE NAVBAR
 
-@media (max-width: 968px) {
-    label.logo {
-        font-size: 30px;
-        padding-left: 50px;
-        position: fixed;
-    }
+// @media (max-width: 968px) {
+//     label.logo {
+//         font-size: 30px;
+//         padding-left: 50px;
+//         position: fixed;
+//     }
 
-    nav ul li a {
-        font-size: 16px;
-    }
-}
-
-
-
-
-@media (max-width: 875px) {
-    .checkbtn {
-        display: block;
-    }
+//     nav ul li a {
+//         font-size: 16px;
+//     }
+// }
 
 
 
-    nav ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #27282c;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-        position: fixed;
-        top: 80px;
-        z-index: 3;
+
+// @media (max-width: 875px) {
+//     .checkbtn {
+//         display: block;
+//     }
+
+
+
+//     nav ul {
+//         position: fixed;
+//         width: 100%;
+//         height: 100vh;
+//         background: #27282c;
+//         top: 80px;
+//         left: -100%;
+//         text-align: center;
+//         transition: all .5s;
+//         position: fixed;
+//         top: 80px;
+//         z-index: 3;
   
 
-        li {
-            display: block;
-            margin: 50px 0;
-            line-height: 30px;
+//         li {
+//             display: block;
+//             margin: 50px 0;
+//             line-height: 30px;
      
-            a {
-                font-size: 20px;    
-            }
-        }
+//             a {
+//                 font-size: 20px;    
+//             }
+//         }
 
-    }
+//     }
 
-    a.hover {
-        background: none;
-        color: #0082e6;
-    }
+//     a.hover {
+//         background: none;
+//         color: #0082e6;
+//     }
 
-    #check:checked~ul {
-        left: 0;
-    }
+//     #check:checked~ul {
+//         left: 0;
+//     }
 
 
 
-    .event .title h1 {
-        color: green;
-    }
-};
+//     .event .title h1 {
+//         color: green;
+//     }
+// };
 
 
 

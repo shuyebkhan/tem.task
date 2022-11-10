@@ -51,6 +51,192 @@ label.logo {
   display: none;
 }
 
+.content-items img {
+  -webkit-width: 100%;
+  -moz-width: 100%;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#data {
+  position: absolute;
+  bottom: 20%;
+  -webkit-width: 100%;
+  -moz-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#data .head {
+  color: #fff;
+  padding: 20px 0;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+.event {
+  width: 80%;
+  margin: 80px auto;
+}
+.event .title {
+  text-align: center;
+  font-size: 24px;
+}
+.event .title h1 {
+  color: cadetblue;
+}
+
+.event .row {
+  margin-top: 0px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  padding: 0 26px;
+}
+.row .col h2 {
+  color: cadetblue;
+  margin-top: 25px;
+}
+
+.col img {
+  width: 90%;
+  height: 60vh;
+}
+
+.col .btn {
+  border: 1px solid cadetblue;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.col .btn:hover {
+  background-color: transparent;
+  color: dimgray;
+}
+
+.explore {
+  -webkit-width: 100%;
+  -moz-width: 100%;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://media.worldnomads.com/shareimages/home-1200x630.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+}
+.explore .explore-content {
+  margin-top: 10%;
+  width: 100%;
+  padding: 50px;
+  color: white;
+}
+
+.explore-content h1 {
+  font-size: 40px;
+  margin: 50px;
+}
+
+.explore-content p {
+  font-size: 23px;
+  margin-left: 55px;
+  padding-top: 60px;
+}
+
+.explore .btn {
+  border: 1px solid cadetblue;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  margin-left: 50px;
+  margin-top: 35px;
+}
+
+.explore .btn:hover {
+  background-color: cadetblue;
+}
+
+.tours {
+  width: 100%;
+}
+
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.content-col {
+  width: 60%;
+  padding-left: 40px;
+}
+.content-col h1 {
+  font-size: 1.9rem;
+  position: relative;
+  color: cadetblue;
+  word-spacing: 6px;
+}
+.content-col p {
+  color: grey;
+  font-size: 14px;
+}
+.content-col .btn {
+  border: 1px solid cadetblue;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.content-col .btn:hover {
+  background-color: transparent;
+  color: dimgray;
+}
+
+.img-col {
+  width: 40%;
+  padding-right: 30px;
+}
+.img-col .img-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: end;
+}
+.img-col .img-gallery img {
+  max-width: 200px;
+  height: 35vh;
+  margin: 15px;
+}
+
+#foot {
+  background-color: slateblue;
+  color: white;
+  text-align: center;
+}
+
 @media (max-width: 968px) {
   label.logo {
     font-size: 30px;
@@ -94,192 +280,95 @@ label.logo {
     left: 0;
   }
 }
-.content-items img {
-  -webkit-width: 100%;
-  -moz-width: 100%;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
+@media (max-width: 1200px) and (min-width: 600px) {
+  .col img {
+    height: 40vh;
+  }
+  .event .row {
+    margin-top: -70px;
+  }
+  .event {
+    height: 90vh;
+  }
 }
-
-#data {
-  position: absolute;
-  bottom: 20%;
-  -webkit-width: 100%;
-  -moz-width: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+@media (min-width: 320px) and (max-width: 599px) {
+  .event {
+    width: 80%;
+    margin: 150px auto;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .col img {
+    height: 20vh;
+  }
+  .row .col {
+    margin-top: 20px;
+  }
 }
-#data .head {
-  color: #fff;
-  padding: 20px 0;
-  letter-spacing: 2px;
-  word-spacing: 5px;
+@media (min-width: 400px) and (max-width: 600px) {
+  .explore-content {
+    width: 100%;
+    padding: 50px;
+    margin-top: 10%;
+  }
+  .explore-content h1 {
+    color: rgba(95, 158, 160, 0.791);
+  }
+  .explore-content p {
+    font-size: 20px;
+    padding-top: 0px;
+  }
 }
-
-.event {
-  height: 100vh;
-  width: 80%;
-  margin: 80px auto;
+@media (max-width: 399px) {
+  .explore .explore-content {
+    margin-top: 0%;
+  }
+  .explore-content h1 {
+    color: grey;
+  }
+  .explore-content p {
+    font-size: 16px;
+    padding-top: 0px;
+  }
 }
-.event .title {
-  text-align: center;
-  font-size: 24px;
+@media (min-width: 400px) and (max-width: 700px) {
+  .row1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-col {
+    width: 100%;
+  }
+  .img-col .img-gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+  }
+  .img-col .img-gallery img {
+    max-width: 160px;
+  }
 }
-.event .title h1 {
-  color: cadetblue;
+@media (max-width: 399px) {
+  .row1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-col {
+    width: 100%;
+  }
+  .img-col .img-gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 126%;
+    justify-content: center;
+  }
+  .img-col .img-gallery img {
+    max-width: 160px;
+  }
 }
-
-.event .row {
-  margin-top: 70px;
-}
-
-.row {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-}
-.row .col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 150px;
-}
-.row .col h2 {
-  color: cadetblue;
-  margin-top: 25px;
-}
-.row .col h2 p {
-  color: darkgrey;
-  padding: 15px 0px;
-}
-
-.col img {
-  width: 90%;
-  height: 60vh;
-}
-
-.col .btn {
-  border: 1px solid cadetblue;
-  border-radius: 5px;
-  background-color: dodgerblue;
-  padding: 10px 20px;
-  color: white;
-  cursor: pointer;
-  margin-top: 25px;
-}
-
-.col .btn:hover {
-  background-color: transparent;
-  color: dimgray;
-}
-
-.explore {
-  -webkit-width: 100%;
-  -moz-width: 100%;
-  width: 100%;
-  height: 100vh;
-  background-image: url(https://media.worldnomads.com/shareimages/home-1200x630.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-}
-.explore .explore-content {
-  margin-top: 10%;
-  width: 100%;
-  padding: 50px;
-  color: white;
-}
-.explore .explore-content h1 {
-  font-size: 40px;
-  margin: 50px;
-}
-
-.explore-content p {
-  font-size: 25px;
-  margin-left: 55px;
-  padding-top: 60px;
-}
-
-.explore .btn {
-  border: 1px solid cadetblue;
-  border-radius: 5px;
-  background-color: transparent;
-  padding: 10px 20px;
-  color: white;
-  cursor: pointer;
-  margin-left: 50px;
-  margin-top: 35px;
-}
-
-.explore .btn:hover {
-  background-color: cadetblue;
-}
-
-.tours {
-  width: 100%;
-}
-
-.row {
-  height: 60vh;
-}
-
-.content-col {
-  width: 60%;
-  padding-left: 40px;
-}
-.content-col h1 {
-  font-size: 2rem;
-  position: relative;
-  color: cadetblue;
-  word-spacing: 10px;
-}
-.content-col p {
-  color: grey;
-  font-size: 15px;
-}
-.content-col .btn {
-  border: 1px solid cadetblue;
-  border-radius: 5px;
-  background-color: dodgerblue;
-  padding: 10px 20px;
-  color: white;
-  cursor: pointer;
-  margin-top: 25px;
-}
-
-.content-col .btn:hover {
-  background-color: transparent;
-  color: dimgray;
-}
-
-.img-col {
-  width: 40%;
-  padding-right: 30px;
-}
-.img-col .img-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: end;
-}
-.img-col .img-gallery img {
-  max-width: 270px;
-  height: 35vh;
-  margin: 15px;
-}
-
-#foot {
-  background-color: slateblue;
-  color: white;
-  text-align: center;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -290,4 +379,10 @@ label.logo {
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@media (max-width: 500px) {
+  .event .title h1 {
+    color: green;
+  }
 }/*# sourceMappingURL=style.css.map */
